@@ -1,0 +1,243 @@
+/**
+ * ÆHN - A hackable Hacker News theme
+ */
+@import (url("//fonts.googleapis.com/css?family=Source+Sans+Pro"));
+:root {
+    --font: Source Sans Pro;
+
+    --main-bg: #141a1f;
+    --main-fg: #a6b5c5;
+    --main-dark: #6b859e;
+
+    --header: #1a2128;
+
+    --link-normal-fg: #6ecfcf;
+    --link-normal-bg: transparent;
+    --link-hover-fg: var(--link-normal-fg);
+    --link-hover-bg: var(--header);
+    --link-visited-fg: #0f8b8b;
+    --link-visited-bg: transparent;
+
+    /**
+     * Misc. features
+     */
+    --hide-display: none; /* Hide the "hide" link. Set to 'inherit' to show */
+    --flag-display: none; /* Hide the "flag" link. Set to 'inherit' to show */
+    --icon-hnuser: "👤 ";
+    --icon-age: "⏳ ";
+    --icon-comments: "💬 ";
+}
+
+* {
+    color: var(--main-fg) !important;
+    background-color: var(--main-bg) !important;
+    font-family: var(--font), helvetica, sans-serif !important;
+}
+
+body {
+    padding: 0 0 1rem 0;
+    margin: 0;
+}
+
+code,
+pre,
+input,
+textarea {
+    background: var(--link-hover-bg) !important;
+}
+
+a * {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+td {
+    font-size: 1rem !important;
+}
+
+/**
+ * Basic layout
+ */
+#hnmain {
+    width: 100%;
+}
+
+.profileform {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+
+/**
+ * Header
+ */
+#hnmain > tbody > tr:first-child * {
+    background-color: var(--header) !important;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#hnmain > tbody > tr:first-child > td {
+    border-radius: 0;
+    opacity: 0.95;
+}
+
+#hnmain > tbody > tr:first-child * img {
+    background-color: var(--main-bg) !important;
+}
+
+#hnmain > tbody > tr:first-child * :is(a:link, a:visited) {
+    color: var(--main-dark) !important;
+}
+
+#hnmain > tbody > tr:first-child * a:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/**
+ * Spacers
+ */
+#pagespace,
+.spacer {
+    height: 1.4rem !important;
+}
+
+/**
+ * Item list
+ */
+.itemlist {
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.itemlist a:link,
+.profileform a:link {
+    display: inline-block;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    color: var(--link-normal-fg) !important;
+    background-color: var(--link-normal-bg) !important;
+    transition: background-color 0.1s linear, color 0.1s linear;
+}
+
+a:visited,
+.itemlist a:visited {
+    color: var(--link-visited-fg) !important;
+    background-color: var(--link-visited-bg) !important;
+}
+
+a:hover,
+.itemlist a:hover {
+    color: var(--link-hover-fg) !important;
+    background-color: var(--link-hover-bg) !important;
+    text-decoration: none;
+}
+
+/**
+ * Subtext
+ */
+.subtext {
+    font-size: 0.8rem !important;
+    line-height: 1.4rem;
+    opacity: 0.85;
+    color: rgba(0, 0, 0, 0) !important;
+    padding-left: 0.4rem;
+}
+
+.subtext a[href^="hide"] {
+    display: var(--hide-display);
+}
+
+.subtext a[href^="flag"] {
+    display: var(--flag-display);
+}
+
+.subtext a:link {
+    padding: 0.1rem 0.8rem;
+    border-radius: 1000px;
+}
+
+/**
+ * Misc. elements
+ */
+.votearrow {
+    margin: 0 0.6rem;
+}
+
+.subtext a.hnuser:link {
+    margin-right: 2rem;
+}
+
+/**
+ * Icons
+ */
+.hnuser:before {
+    content: var(--icon-hnuser);
+}
+.age a:before {
+    content: var(--icon-age);
+}
+.subtext a[href^="hide"] + a:before {
+    content: var(--icon-comments);
+}
+
+/**
+ * Comments
+ */
+.comment-tree,
+.comtr > td > table {
+    margin: 0 auto;
+    width: 85vw;
+    font-size: 1.2rem !important;
+}
+
+.comtr > td:first-child > table .default {
+    width: 100%;
+}
+
+.comhead,
+.reply u {
+    font-size: 0.8rem !important;
+}
+
+.comment {
+    font-size: 1rem !important;
+    margin-bottom: 0.8rem !important;
+}
+
+.commtext {
+    line-height: 1.4 !important;
+}
+
+.commtext p {
+    margin-top: 0.8rem !important;
+}
+
+.c5a {
+    opacity: 0.75;
+}
+
+.c73 {
+    opacity: 0.65;
+}
+
+.c88 {
+    opacity: 0.55;
+}
+
+.c9c {
+    opacity: 0.45;
+}
+
+.ind {
+    background-image: linear-gradient(
+        90deg,
+        transparent 0%,
+        transparent 98.5%,
+        var(--main-dark) 100%
+    );
+    background-size: 40px 1px;
+    background-repeat: repeat;
+}
