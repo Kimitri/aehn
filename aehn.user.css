@@ -28,8 +28,8 @@
         --link-visited-bg: transparent;
 
         /**
-     * Misc. features
-     */
+         * Misc. features
+         */
         --hide-display: none; /* Hide the "hide" link. Set to 'inherit' to show */
         --flag-display: none; /* Hide the "flag" link. Set to 'inherit' to show */
         --icon-hnuser: "👤 ";
@@ -65,8 +65,8 @@
     }
 
     /**
- * Basic layout
- */
+     * Basic layout
+     */
     #hnmain {
         width: 100%;
     }
@@ -77,8 +77,8 @@
     }
 
     /**
- * Header
- */
+     * Header
+     */
     #hnmain > tbody > tr:first-child * {
         background-color: var(--header) !important;
         border-radius: 0.2rem;
@@ -106,16 +106,16 @@
     }
 
     /**
- * Spacers
- */
+     * Spacers
+     */
     #pagespace,
     .spacer {
         height: 1.4rem !important;
     }
 
     /**
- * Item list
- */
+     * Item list
+     */
     .itemlist {
         margin: 0 auto;
         font-size: 1rem;
@@ -145,8 +145,8 @@
     }
 
     /**
- * Subtext
- */
+     * Subtext
+     */
     .subtext {
         font-size: 0.8rem !important;
         line-height: 1.4rem;
@@ -169,8 +169,8 @@
     }
 
     /**
- * Misc. elements
- */
+     * Misc. elements
+     */
     .votearrow {
         margin: 0 0.6rem;
     }
@@ -180,8 +180,8 @@
     }
 
     /**
- * Icons
- */
+     * Icons
+     */
     .hnuser:before {
         content: var(--icon-hnuser);
     }
@@ -193,8 +193,8 @@
     }
 
     /**
- * Comments
- */
+     * Comments
+     */
     .comment-tree,
     .comtr > td > table {
         margin: 0 auto;
