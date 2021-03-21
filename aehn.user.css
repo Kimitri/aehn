@@ -1,3 +1,10 @@
+/* ==UserStyle==
+@name         ÆHN - A hackable, dark Hacker News user stylesheet
+@version      1.0.0
+@license      Other
+@description  A full-featured stylesheet for Hacker News
+@preprocessor uso
+==/UserStyle== */
 @-moz-document domain("news.ycombinator.com") {
     /**
      * ÆHN - A hackable Hacker News theme
