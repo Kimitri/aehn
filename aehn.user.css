@@ -179,6 +179,11 @@
         margin-right: 2rem;
     }
 
+    .fatitem {
+        width: 85vw;
+        margin: 0 auto;
+    }
+
     /**
      * Icons
      */
