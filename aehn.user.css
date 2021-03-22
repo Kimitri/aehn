@@ -7,9 +7,6 @@
 @preprocessor uso
 ==/UserStyle== */
 @-moz-document domain("news.ycombinator.com") {
-    /**
-     * ÆHN - A hackable Hacker News theme
-     */
     @import (url("//fonts.googleapis.com/css?family=Source+Sans+Pro"));
     :root {
         --font: Source Sans Pro;
