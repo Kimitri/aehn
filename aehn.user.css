@@ -11,6 +11,8 @@
     :root {
         --font: Source Sans Pro;
 
+        --base-unit: 0.8rem;
+
         --main-bg: #141a1f;
         --main-fg: #a6b5c5;
         --main-dark: #6b859e;
@@ -44,7 +46,7 @@
     }
 
     body {
-        padding: 0 0 1rem 0;
+        padding: 0 0 var(--base-unit) 0;
         margin: 0;
     }
 
@@ -81,8 +83,8 @@
      */
     #hnmain > tbody > tr:first-child * {
         background-color: var(--header) !important;
-        border-radius: 0.2rem;
-        padding: 0.2rem;
+        border-radius: calc(var(--base-unit) / 4);
+        padding: calc(var(--base-unit) / 4);
         position: sticky;
         top: 0;
         z-index: 1000;
@@ -110,7 +112,7 @@
      */
     #pagespace,
     .spacer {
-        height: 1.4rem !important;
+        height: calc(var(--base-unit) * 2) !important;
     }
 
     /**
@@ -124,8 +126,8 @@
     .itemlist a:link,
     .profileform a:link {
         display: inline-block;
-        border-radius: 0.2rem;
-        padding: 0.2rem 0.4rem;
+        border-radius: calc(var(--base-unit) / 4);
+        padding: calc(var(--base-unit) / 4) calc(var(--base-unit) / 2);
         color: var(--link-normal-fg) !important;
         background-color: var(--link-normal-bg) !important;
         transition: background-color 0.1s linear, color 0.1s linear;
@@ -149,10 +151,10 @@
      */
     .subtext {
         font-size: 0.8rem !important;
-        line-height: 1.4rem;
+        line-height: calc(var(--base-unit) * 2);
         opacity: 0.85;
         color: rgba(0, 0, 0, 0) !important;
-        padding-left: 0.4rem;
+        padding-left: calc(var(--base-unit) / 2);
     }
 
     .subtext a[href^="hide"] {
@@ -164,7 +166,7 @@
     }
 
     .subtext a:link {
-        padding: 0.1rem 0.8rem;
+        padding: calc(var(--base-unit) / 8) var(--base-unit);
         border-radius: 1000px;
     }
 
@@ -172,7 +174,7 @@
      * Misc. elements
      */
     .votearrow {
-        margin: 0 0.6rem;
+        margin: 0 var(--base-unit);
     }
 
     .subtext a.hnuser:link {
@@ -218,7 +220,7 @@
 
     .comment {
         font-size: 1rem !important;
-        margin-bottom: 0.8rem !important;
+        margin-bottom: var(--base-unit) !important;
     }
 
     .commtext {
@@ -226,7 +228,7 @@
     }
 
     .commtext p {
-        margin-top: 0.8rem !important;
+        margin-top: var(--base-unit) !important;
     }
 
     .c5a {
