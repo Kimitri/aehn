@@ -123,6 +123,10 @@
         font-size: 1rem;
     }
 
+    .itemlist td.title {
+        vertical-align: middle;
+    }
+
     .itemlist a:link,
     .profileform a:link {
         display: inline-block;
