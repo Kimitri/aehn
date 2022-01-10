@@ -39,6 +39,26 @@
         --icon-comments: "💬 ";
     }
 
+    /**
+     * Wide gamut color for supporting browsers
+     */
+    @supports (color: color(display-p3 1 1 1)) {
+        :root {
+            --main-bg: color(display-p3 .07843137255 .1019607843 .1215686275);
+            --main-fg: color(display-p3 .6509803922 .7098039216 .7725490196);
+            --main-dark: color(display-p3 .4196078431 .5215686275 .6196078431);
+            --header: color(display-p3 .1019607843 .1294117647 .1568627451);
+            --link-normal-fg: color(display-p3 .431372549 .8117647059 .8117647059);
+            --link-normal-bg: transparent;
+            --link-hover-fg: var(--link-normal-fg);
+            --link-hover-bg: var(--header);
+            --link-visited-fg: color(display-p3 .05882352941 .5450980392 .5450980392);
+            --link-visited-bg: transparent;
+            --ind-guide-width: 1px;
+            --ind-guide-color: var(--main-dark);
+        }
+    }
+
     * {
         color: var(--main-fg) !important;
         background-color: var(--main-bg) !important;
