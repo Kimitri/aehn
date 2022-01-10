@@ -4,7 +4,7 @@
 
 ## Features
 
--   **Palette:** A nice, dark color scheme based on [Atomic (dark mode, blue)](https://github.com/gerardbm/Atomic). Configurable via CSS vars.
+-   **Palette:** A nice, dark color scheme based on [Atomic (dark mode, blue)](https://github.com/gerardbm/Atomic) with display-p3 wide gamut color support. Configurable via CSS vars.
 -   **Font:** Source Sans Pro. Configurable via CSS vars.
 -   **Clutter elimination:** By default, removes all "hide" and "flag" links. Configurable via CSS vars.
 -   **Icons:** Simple emoji icons for user, age and comment links. Configurable via CSS vars.
