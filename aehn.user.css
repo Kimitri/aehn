@@ -237,31 +237,6 @@
         width: 100%;
     }
 
-    .comment-tree {
-        background-image: linear-gradient(
-            90deg,
-            transparent 0%,
-            transparent calc(100% - var(--ind-guide-width)),
-            var(--ind-guide-color) calc(100% - var(--ind-guide-width)),
-            var(--ind-guide-color) 100%
-        );
-        background-size: 40px 1px;
-        background-repeat: repeat;
-    }
-     
-    .comment-tree .votelinks,
-    .comment-tree .default {
-        background-color: var(--main-bg);
-        outline: 2px solid var(--main-bg);
-    }
-    
-    .comment-tree td,
-    .comment-tree table {
-        padding: 0;
-        margin: 0;
-        border-collapse: collapse;
-    }
-
     .comhead,
     .reply u {
         font-size: 0.8rem !important;
@@ -294,5 +269,17 @@
 
     .c9c {
         opacity: 0.45;
+    }
+
+    .ind {
+        background-image: linear-gradient(
+            90deg,
+            transparent 0%,
+            transparent calc(100% - var(--ind-guide-width)),
+            var(--ind-guide-color) calc(100% - var(--ind-guide-width)),
+            var(--ind-guide-color) 100%
+        );
+        background-size: 40px 1px;
+        background-repeat: repeat;
     }
 }
