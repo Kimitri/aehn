@@ -252,7 +252,7 @@
     .comment-tree .votelinks,
     .comment-tree .default {
         background-color: var(--main-bg);
-        outline: 1px solid var(--main-bg);
+        outline: 2px solid var(--main-bg);
     }
     
     .comment-tree td,
