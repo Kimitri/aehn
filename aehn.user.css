@@ -138,16 +138,16 @@
     /**
      * Item list
      */
-    .itemlist {
+    #hnmain > tbody > tr:nth-child(3) td table {
         margin: 0 auto;
         font-size: 1rem;
     }
 
-    .itemlist td.title {
+    #hnmain > tbody > tr:nth-child(3) td td.title {
         vertical-align: middle;
     }
 
-    .itemlist a:link,
+    #hnmain > tbody > tr:nth-child(3) td a:link,
     .profileform a:link {
         display: inline-block;
         border-radius: calc(var(--base-unit) / 4);
@@ -158,13 +158,13 @@
     }
 
     a:visited,
-    .itemlist a:visited {
+    #hnmain > tbody > tr:nth-child(3) td a:visited {
         color: var(--link-visited-fg) !important;
         background-color: var(--link-visited-bg) !important;
     }
 
     a:hover,
-    .itemlist a:hover {
+    #hnmain > tbody > tr:nth-child(3) td a:hover {
         color: var(--link-hover-fg) !important;
         background-color: var(--link-hover-bg) !important;
         text-decoration: none;
